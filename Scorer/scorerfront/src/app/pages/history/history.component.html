@@ -1,0 +1,13 @@
+<div class="allMatchesDivision">
+    <h1 class="text-4xl font-extrabold text-gray-800">Matches</h1>
+    <div class="items-stretch card-container flex-wrap flex-col md:flex-row flex">
+        @for (match of allMatches; track $index) {
+        <div class="w-full md:w-[33.33%]">
+            <app-match-card [match]="match"></app-match-card>
+        </div>
+        }
+        @empty {
+            <div class="font-semibold mt-10 text-2xl">No recent matches found</div>
+        }
+    </div>
+</div>

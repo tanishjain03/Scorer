@@ -1,0 +1,21 @@
+<div class="liveMatchesDivision">
+    <div class="flex justify-between">
+        <h1 class="text-4xl font-extrabold text-gray-800">Live Score</h1>
+        <div>
+            <button id="autoRefreshButton" type="button" [disabled]="isDisabled" (click)="liveMatchesAutoRefresh()"
+                class="text-white px-4 py-2 rounded-2xl mx-2" [style.background-color]="buttonColor">Auto Refresh</button>
+            <button type="button" [disabled]="isDisabled" (click)="liveMatchesRefreshOnce()"
+                class="text-white px-4 py-2 rounded-2xl mx-2" [style.background-color]="buttonColor">Refresh Once</button>
+        </div>
+    </div>
+    <div class="items-stretch card-container flex-wrap flex-col md:flex-row flex">
+        @for (match of liveMatches; track $index) {
+        <div class="w-full md:w-[33.33%]">
+            <app-match-card [match]="match"></app-match-card>
+        </div>
+        }
+        @empty {
+        <div class="font-semibold mt-10 text-2xl">There are no live matches</div>
+        }
+    </div>
+</div>

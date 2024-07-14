@@ -1,0 +1,127 @@
+<div class="table-container">
+    <h1 class="text-3xl font-extrabold text-gray-800 text-center">Points Table</h1>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index<9) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index<4) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+    <hr>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index>=9 && $index<18) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index>=4 && $index<8) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+    <hr>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index>=18 && $index<27) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index>=8 && $index<13) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+    <hr>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index>=27 && $index<36) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index>=13 && $index<18) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index>=36 && $index<45) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index>=18 && $index<23) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+    <hr>
+    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg text-center mt-8">
+        <thead class="bg-gray-200">
+            <tr class="border-b-2">
+                @for (heading of tableHeadings; track $index) {
+                @if ($index>=45 && $index<54) { <th class="text-center py-3 px-4 font-semibold text-sm w-10">{{heading}}</th>
+                    }
+                    }
+            </tr>
+        </thead>
+        <tbody>
+            @for (team of pointsTable; track $index) {
+            @if ($index>=23 && $index<28) { <tr class="hover:bg-gray-100 border-b-2 ">
+                @for (data of team; track $index) {
+                <td class="py-3 px-4 border-b-black">{{data}}</td>
+                }
+                </tr>
+                }
+                }
+        </tbody>
+    </table>
+</div>
